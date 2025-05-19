@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gestão de Redes Sociais | Seu Nome</title>
+  <style>
+    /* Reset básico */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f0f4f8;
+      color: #333;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    header {
+      background: linear-gradient(135deg, #005f99, #007acc);
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+      animation: slideDown 1s ease forwards;
+      opacity: 0;
+    }
+
+    header h1 {
+      font-size: 3em;
+      margin-bottom: 10px;
+      animation: fadeInText 2s ease forwards;
+      opacity: 0;
+    }
+
+    header p {
+      font-size: 1.2em;
+      font-weight: 300;
+      animation: fadeInText 2.5s ease forwards;
+      opacity: 0;
+    }
+
+    section {
+      max-width: 900px;
+      margin: 60px auto;
+      padding: 0 20px;
+      opacity: 0;
+      transform: translateY(50px);
+      transition: opacity 1s ease, transform 1s ease;
+    }
+
+    section.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    h2 {
+      color: #007acc;
+      border-bottom: 3px solid #007acc;
+      padding-bottom: 8px;
+      margin-bottom: 25px;
+      font-size: 2em;
+      animation: bounceIn 0.8s ease forwards;
+      opacity: 0;
+    }
+
+    ul {
+      list-style: inside disc;
+      margin-bottom: 30px;
+      font-size: 1.1em;
+    }
+
+    form {
+      background: white;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      max-width: 600px;
+      margin-bottom: 30px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 10px;
+      font-weight: 600;
+      color: #444;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 12px 15px;
+      margin-bottom: 20px;
+      border: 2px solid #ddd;
+      border-radius: 8px;
+      font-size: 1em;
+      transition: border-color 0.3s ease;
+      font-family: inherit;
+    }
+
+    input:focus, textarea:focus {
+      border-color: #007acc;
+      outline: none;
+    }
+
+    button {
+      background: #007acc;
+      color: white;
+      border: none;
+      padding: 15px 30px;
+      font-size: 1.2em;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      box-shadow: 0 5px 15px rgba(0, 122, 204, 0.4);
+    }
+
+    button:hover {
+      background: #005f99;
+      box-shadow: 0 7px 20px rgba(0, 95, 153, 0.6);
+    }
+
+    p.social-links {
+      font-size: 1.1em;
+      margin-top: 10px;
+    }
+
+    p.social-links a {
+      color: #007acc;
+      text-decoration: none;
+      margin: 0 10px;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+
+    p.social-links a:hover {
+      color: #005f99;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px 20px;
+      background: #222;
+      color: #ccc;
+      font-size: 0.9em;
+      margin-top: 50px;
+    }
+
+    /* Animações */
+
+    @keyframes slideDown {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+      from {
+        opacity: 0;
+        transform: translateY(-50px);
+      }
+    }
+
+    @keyframes fadeInText {
+      to {
+        opacity: 1;
+      }
+      from {
+        opacity: 0;
+      }
+    }
+
+    @keyframes bounceIn {
+      0% {
+        opacity: 0;
+        transform: scale(0.8);
+      }
+      60% {
+        opacity: 1;
+        transform: scale(1.1);
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
+
+    /* Scroll suave para links */
+    html {
+      scroll-behavior: smooth;
+    }
+
+    /* Responsividade */
+    @media(max-width: 600px) {
+      header h1 {
+        font-size: 2em;
+      }
+      h2 {
+        font-size: 1.5em;
+      }
+      form {
+        padding: 15px;
+      }
+      button {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Seu Nome - Gestão de Redes Sociais</h1>
+  <p>Transforme sua presença digital e conquiste mais clientes!</p>
+</header>
+
+<section id="servicos">
+  <h2>Serviços</h2>
+  <ul>
+    <li>Gestão de Instagram e Facebook</li>
+    <li>Criação e planejamento de conteúdo</li>
+    <li>Atendimento a clientes via redes sociais</li>
+    <li>Relatórios de desempenho e análise</li>
+  </ul>
+</section>
+
+<section id="depoimentos">
+  <h2>Depoimentos</h2>
+  <p><em>"Excelente trabalho! Minhas redes cresceram muito."</em> – Cliente Satisfeito</p>
+  <p><em>"Profissional, criativo e muito dedicado."</em> – Outro Cliente</p>
+</section>
+
+<section id="contato">
+  <h2>Contato</h2>
+  <form action="https://formspree.io/f/yourformid" method="POST">
+    <label for="nome">Nome</label>
+    <input type="text" id="nome" name="nome" required />
+
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" required />
+
+    <label for="mensagem">Mensagem</label>
+    <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+
+    <button type="submit">Enviar</button>
+  </form>
+  <p class="social-links">
+    Ou me chame nas redes sociais:  
+    <a href="https://instagram.com/seunome" target="_blank">Instagram</a> |  
+    <a href="https://facebook.com/seunome" target="_blank">Facebook</a> |  
+    <a href="tel:+351912345678">Telefone: +351 912 345 678</a>
+  </p>
+</section>
+
+<footer>
+  <p>© 2025 Seu Nome - Todos os direitos reservados.</p>
+</footer>
+
+<script>
+  // Mostrar seções com efeito fade-in ao scroll
+  const sections = document.querySelectorAll('section');
+
+  function checkSections() {
+    const triggerBottom = window.innerHeight * 0.85;
+
+    sections.forEach(section => {
+      const sectionTop = section.getBoundingClientRect().top;
+
+      if(sectionTop < triggerBottom) {
+        section.classList.add('visible');
+      }
+    });
+  }
+
+  window.addEventListener('scroll', checkSections);
+  window.addEventListener('load', checkSections);
+</script>
+
+</body>
+</html>
