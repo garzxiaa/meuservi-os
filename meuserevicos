@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gestão de Redes Sociais | Seu Nome</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0; padding: 0;
+      background: #f4f4f4;
+      color: #333;
+    }
+    header {
+      background: #0077cc;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2em;
+    }
+    section {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    h2 {
+      color: #0077cc;
+      border-bottom: 2px solid #0077cc;
+      padding-bottom: 5px;
+      margin-bottom: 20px;
+    }
+    p {
+      line-height: 1.6;
+    }
+    ul {
+      list-style: inside disc;
+    }
+    form {
+      background: white;
+      padding: 20px;
+      border-radius: 6px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: bold;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 1em;
+      resize: vertical;
+    }
+    button {
+      background: #0077cc;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 1em;
+    }
+    button:hover {
+      background: #005fa3;
+    }
+    footer {
+      text-align: center;
+      padding: 20px 0;
+      background: #222;
+      color: #ccc;
+      margin-top: 40px;
+    }
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.5em;
+      }
+      section {
+        margin: 20px 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Seu Nome - Gestão de Redes Sociais</h1>
+    <p>Transforme sua presença digital e conquiste mais clientes!</p>
+  </header>
+
+  <section id="servicos">
+    <h2>Serviços</h2>
+    <ul>
+      <li>Gestão de Instagram e Facebook</li>
+      <li>Criação e planejamento de conteúdo</li>
+      <li>Atendimento a clientes via redes sociais</li>
+      <li>Relatórios de desempenho e análise</li>
+    </ul>
+  </section>
+
+  <section id="depoimentos">
+    <h2>Depoimentos</h2>
+    <p><em>"Excelente trabalho! Minhas redes cresceram muito."</em> – Cliente Satisfeito</p>
+    <p><em>"Profissional, criativo e muito dedicado."</em> – Outro Cliente</p>
+  </section>
+
+  <section id="contato">
+    <h2>Contato</h2>
+    <form action="https://formspree.io/f/yourformid" method="POST">
+      <label for="nome">Nome</label>
+      <input type="text" id="nome" name="nome" required />
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="mensagem">Mensagem</label>
+      <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+
+      <button type="submit">Enviar</button>
+    </form>
+    <p>Ou me chame nas redes sociais:</p>
+    <p>
+      <a href="https://instagram.com/seunome" target="_blank">Instagram</a> |
+      <a href="https://facebook.com/seunome" target="_blank">Facebook</a> |
+      <a href="tel:+351912345678">Telefone: +351 912 345 678</a>
+    </p>
+  </section>
+
+  <footer>
+    <p>© 2025 Seu Nome - Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>
